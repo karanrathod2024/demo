@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .frame{
+            padding: 0;
+            margin: 0;
+            
+            /* border: 2px solid red; */
+            margin: 5px;
+           display:flex;
+        }
+
+        #f1{
+            /* display: flex; */
+            margin: 4px;
+            width:500px ;
+            height: 500px;
+            /* border: 2px solid rebeccapurple; */
+            align-items: center;
+            display: inline-block;
+            /* box-shadow:1px 1px 13px -7px,-1px -1px 13px -30px; */
+
+        }
+        #sf1{
+            position: absolute;
+            top: 8%;
+            left:10%;
+            align-self: center;
+            margin: 4px;
+            width: 231px;
+            height: 230px;
+            /* border: 2px solid rgb(0, 200, 255); */
+            background-color: azure;
+            /* border: 0.5px solid rgb(237, 237, 237); */
+            border-radius: 5px;
+            
+        }
+        #sf1:hover{
+            box-shadow: 3px 3px 15px -10px,-3px -3px 15px -10px;
+            border-radius: 4px;
+        }
+        #a1{
+            text-decoration: none;
+            position: relative;
+            top: 90%;
+            left: 18%;
+        }
+
+        #sf2{
+            /* border: 2px solid green; */
+            width: 30%;
+            height: 15%;
+            align-items: center;
+            position: absolute;
+            left: 2%;
+            top: 45%;
+            display: flex;
+            border-radius: 5px;
+            box-shadow:1px 1px 15px -4px,-1px -1px 15px -40px;
+        
+        }
+        #fsf2{
+            /* border: 1px solid rgb(255, 0, 0); */
+            margin: 2px;
+            padding: 0px;
+            width: 130px;
+            
+            /* padding: ; */
+            height: 100px;
+            position: relative;
+            left: 8px;
+            top: 0px;
+        }
+        #fsf2:hover{
+            box-shadow: 3px 3px 15px -10px,-3px -3px 15px -10px;
+            border-radius: 4px;
+        }
+        
+        #ssf2{
+            /* border:1px solid red; */
+            margin: 2px;
+            width: 130px;
+            height: 100px;
+            position: relative;
+            left: 20px;
+            top: 0px;
+        }
+        #ssf2:hover{
+            box-shadow: 3px 3px 15px -10px,-3px -3px 15px -10px;
+            border-radius: 4px;
+        }
+        #tsf2{
+            margin: 2px;
+            padding: 0px;
+            /* border: 1px solid black; */
+            width: 120px;
+            height: 100px;
+            position: relative;
+            left: 30px;
+            top: 0px;
+        }
+        #tsf2:hover{
+            box-shadow: 3px 3px 15px -10px,-3px -3px 15px -10px;
+            border-radius: 4px;
+        }
+        #f2{
+            /* display: flex; */
+            margin: 4px;
+            width:500px ;
+            height: 500px;
+            /* border: 2px solid rebeccapurple; */
+            border-radius: 5px;
+            box-shadow:1px 1px 13px -7px,-1px -1px 13px -30px;
+            text-align: center;
+        
+        }
+        
+        .s1f2{
+            /* border: 2px solid red; */
+            padding: 4px;
+            margin: 3px;
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            /* top: 10px; */
+            left: 0px;
+        }
+        #af2{
+
+            padding: 2px;
+            margin: 3px;
+            /* border: 1px solid green; */
+            width: 200px;
+            height: 200px;
+            position: relative;
+            top: 30%;
+            left: 3px;
+        }
+        #af2:hover{
+            border-radius: 5px;
+            box-shadow:1px 1px 15px -4px,-1px -1px 15px -40px;
+        }
+        #bf2{
+            
+            padding: 2px;
+            margin: 3px;
+            /* border: 1px solid rgb(0, 51, 128); */
+             width: 200px;
+             height: 200px;
+            position: relative;
+            top: 30%;
+            left: 30px;
+        }
+        #bf2:hover{
+            border-radius: 5px;
+            box-shadow:1px 1px 15px -4px,-1px -1px 15px -40px;
+        }
+        #cf2{
+            padding: 2px;
+            margin: 3px;
+            /* border: 1px solid rgb(128, 0, 119); */
+             width: 200px;
+             height: 200px;
+            position: relative;
+            top: 30%;
+            left: 2px;
+        }
+        #cf2:hover{
+            border-radius: 5px;
+            box-shadow:1px 1px 15px -4px,-1px -1px 15px -40px;
+        }
+        #df2{
+            padding: 2px;
+            margin: 3px;
+            /* border: 1px solid rgb(119, 128, 0); */
+             width: 200px;
+            height: 200px;
+            position: relative;
+            top: 30%;
+            left: 30px;
+        }
+        #df2:hover{
+            border-radius: 5px;
+            box-shadow:1px 1px 15px -4px,-1px -1px 15px -40px;
+        }
+        #imga{
+            position: absolute;
+            top: 13px;
+            left: 30px;
+        }
+        #imgb{
+            position: absolute;
+            top: 13px;
+            left: 30px;  
+        }
+        #imgc{
+            position: absolute;
+            top: 28px;
+            left: 50px;  
+        }
+        #imgd{
+            position: absolute;
+            top: 25px;
+            left:25px;  
+        }
+        #txt1{
+            border: 2px solid pink;
+            display:block;
+            height: 50px;
+            width: 450px;
+            /* position: relative;
+            top: 1%;
+            left: 3px; */
+        }
+        h3{
+            padding: 0px;
+            margin: 0%;
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: medium;
+        }
+        p{
+            padding: 0%;
+            /* margin: 0%; */
+            font-size: medium;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        #f3{
+            /* display: flex; */
+            margin: 4px;
+            width:500px ;
+            height: 500px;
+            /* border: 2px solid rebeccapurple; */
+            display: block;
+            box-shadow:1px 1px 15px -4px,-1px -1px 15px -40px;
+            border-radius: 5px;
+            
+        }
+        .headera{
+            margin: 3px;
+            padding: 4px;
+            width: 95%;
+            height: 15%;
+            text-align: center;
+        /* border: 1px solid red; */
+        position: relative;
+        top: 3px;
+        left: 4px;
+           
+    }
+    a{
+        text-decoration: none;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+       
+    #list{
+        padding: 3px;
+        margin-top: 10px;
+        display: block;
+        margin: 10px;
+            padding: 4px;
+            width: 95%;
+            height: 65%;
+            /* border: 3px solid purple; */
+            margin-top: 10px;
+    }
+
+        #list0{
+            padding-left: 20px;
+            margin: 0%;
+           list-style: none;
+           position: relative;
+           left: 0px;
+           top: 10px;
+           width: 90%;
+           height: 40%;
+        display: flex;
+        flex-wrap: wrap;
+           
+        }
+       li{
+        display: flex;
+        margin-bottom: 8px;
+        padding: 10px;
+        /* border: 2px solid red; */
+        width: 100%;
+        height: 30%;
+        box-shadow:inset 2px 3px 30px -39px ;
+        border-radius: 4px;
+        /* flex-flow: row; */
+        /* flex-direction: column; */
+        /* padding-right: 40px; */
+       }
+       li:hover{
+
+        box-shadow: 2px -2px 20px -8px;
+       }
+       #txtb{
+        margin: 0px;
+        padding: 0px;
+        margin: 2px;
+        position: relative;
+        top:10px;
+        left: 10px;
+       }
+      
+        #list1{
+            padding: 0px ;
+            margin: 0px;
+            /* border: 1px solid rgb(255, 42, 0); */
+            position: relative;
+            top: 230px;
+            left: 19px;
+            font-size: 20px;
+        }
+        #foot{
+            display: flex;
+            padding: 0px;
+            margin: 0px;
+            /* border: 2px solid red; */
+            height: 250px;
+            box-shadow:1px 1px 13px -7px,-1px -1px 13px -30px;
+
+        }
+        #suport{
+            padding: 2px;
+            margin: 4px;
+            /* border: 2px solid blue; */
+            width: 475px;
+          
+            border-radius: 10px;
+        }
+        #pos{
+            width: 270px;
+            height: 130px;
+            border: 1px solid rgba(0, 187, 255, 0.642);
+
+            position:relative;
+            top: 80px;
+            left: 90px;
+            text-align: center;
+            /* text-decoration-line: line-through/ */
+             border-radius: 5px;
+
+        }
+        #pos:hover{
+            
+            box-shadow:1px 1px 15px -4px,-1px -1px 15px -40px;
+        }
+
+        #hw{
+            width: 267px;
+            height: 128px;
+            position: relative;
+            bottom: 51px;
+            right: 0px;
+        }
+    #suport2{
+    /* border: 2px solid rgb(30, 255, 0); */
+    padding: 2px;
+    margin: 8px;
+    width: 65%;
+    /* height: 170px; */
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+    /* top:6px; */
+
+}
+
+#pos1{
+    padding: 3px;
+    margin: 9px;
+    border: 1px solid rgba(0, 187, 255, 0.642);
+
+    width: 200px;
+    align-content: center;
+    height: 150px;
+    position: relative;
+    top: 60px;
+    right: 0px;
+    padding-left: 20px;
+    border-radius: 5px;
+}
+#pos1:hover{
+            
+            box-shadow:1px 1px 15px -4px,-1px -1px 15px -40px;
+        }
+#pos2{
+    padding: 2px;
+    margin: 9px;
+    border: 1px solid rgba(0, 187, 255, 0.642);
+    width: 180px;
+    /* align-content: center; */
+    height: 150px;
+    position: relative;
+    top: 60px;
+    right: 2px;
+    padding-left: 50px;
+    border-radius: 5px;
+
+}
+#pos2:hover{
+            
+            box-shadow:1px 1px 15px -4px,-1px -1px 15px -40px;
+        }
+#psa{
+position: relative;
+top: 20px;
+left: 30px;
+margin: 0px;
+padding: 0px;
+font-size: 20px;
+}
+#psb{
+    position: relative;
+    bottom: 75px;
+    font-size: medium;
+}
+    </style>
+</head>
+<body>
+    <div class="frame">
+    <div id="f1">
+        <div id="sf1">
+            <a href="https://www.hpsupport.com" id="a1">Device Specification > </a>
+            <img src="laptop.png" alt="laptoooooooop">
+        </div>
+        <div id="sf2">
+            <div id="fsf2">
+                <img src="msg.png" alt="new Messages">
+            </div>
+            <div id="ssf2">
+                <img src="add.png" alt="Add device">
+            </div>
+            <div id="tsf2">
+                <img src="updt.png" alt="Updates">
+            </div>
+        </div>
+       
+    </div>
+    <div id="f2">
+          <h3>Device Health</h3>
+          <p>Get Ditails On Your Device Health</p>
+    <div class="s1f2" >
+        <div id="af2">
+            <div id="imga">
+                <img src="warranty.png" alt="warranty">
+            </div>
+        </div>
+        <div id="bf2">
+            <div id="imgb">
+            <img src="storage.png" alt="storage">
+        </div>
+        </div>
+
+        <div id="cf2">
+            <div id="imgc">
+                <img src="battry.png" alt="battry">
+            </div>
+        </div>
+        <div id="df2">
+            <div id="imgd">
+                <img src="security.png" alt="security">
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="f3">
+        <div class="headera">
+            <h3><a href="#">Fixed & Dignostic</a></h3>
+            <p>Quick repair and Dignostic for your Device</p>
+        </div>
+        <div id="list">
+            <ul id="list0">
+                <li>
+                    <img src="network.png" alt="fix network">
+                    <a href="#" id="txtb">fix your network</a>
+                </li>
+                <li>
+                    <img src="fixado.png" alt="fixado">
+                    <a href="#"  id="txtb">Fix audio issues</a>
+                </li>
+                <li>
+                    <img src="optyprms.png" alt="optyprms">
+                    <a href="#"  id="txtb">Optmize your performance</a>
+                </li>
+                <li>
+                    <img src="cos.png" alt="cos">
+                    <a href="#"  id="txtb">Chack your operating system</a>
+                </li>
+                <li>
+                    <img src="rhware.png" alt="rhware">
+                    <a href="#"  id="txtb">Run hardware diagnostics</a>
+                </li>
+            </ul>
+            <ul id="list1">
+                <a href="#">See all fixes and diagnostics..</a>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <div id="foot">
+        <div id="suport">
+            <div id="pos">
+                <p id="psb"><a href="#">Guided Trubleshooting..</a></p>
+                <img src="guid.png" alt="guid" id="hw">
+            </div>
+        </div>
+        <div id="suport2">
+            <p id="psa"><a href="#">Suport resouces</a></p>
+            <div id="pos1">
+               <img src="hps.png" alt="hps">
+            </div>
+            <div id="pos2">
+                <img src="hpc.png" alt="hpc">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
